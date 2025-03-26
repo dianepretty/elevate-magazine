@@ -47,7 +47,7 @@ const Sidebar = () => {
         >
           <User size={20} /> Profile
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/dashboard/settings"
           className={({ isActive }) =>
             `flex items-center gap-2 p-2 rounded-lg transition-colors ${
@@ -56,7 +56,7 @@ const Sidebar = () => {
           }
         >
           <Settings size={20} /> Settings
-        </NavLink>
+        </NavLink> */}
       </nav>
 
       {/* Logout Button */}
