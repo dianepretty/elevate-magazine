@@ -12,7 +12,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="h-screen w-72 bg-[#303A30] text-white flex flex-col p-8">
+    <div className="h-screen static w-72 bg-[#303A30] text-white flex flex-col p-8">
       <h2 className="text-4xl text-center mt-8 italic font-bold font-play mb-14">
         ELEVATE
       </h2>
@@ -37,7 +37,7 @@ const Sidebar = () => {
         >
           <FileText size={20} /> Create article
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to="/dashboard/profile"
           className={({ isActive }) =>
             `flex items-center gap-2 p-2 rounded-lg transition-colors ${
@@ -46,7 +46,7 @@ const Sidebar = () => {
           }
         >
           <User size={20} /> Profile
-        </NavLink>
+        </NavLink> */}
         {/* <NavLink
           to="/dashboard/settings"
           className={({ isActive }) =>

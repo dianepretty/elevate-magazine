@@ -3,14 +3,14 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const testimonials = [
-  { quote: "This platform has been a game-changer for me. I've learned so much from the articles and workshops.", name: "Amina, Entrepreneur" },
-  { quote: "The community support and mentorship have been invaluable. I feel empowered to take the next step in my career.", name: "Ngozi, Professional" },
-  { quote: "Elevate Magazine has helped me connect with inspiring women and grow my confidence in my field.", name: "Fatima, Designer" },
-  { quote: "I love the engaging content and the positive energy. It's exactly what I needed for motivation!", name: "Zainab, Student" },
-  { quote: "The expert advice and shared experiences are truly inspiring. Highly recommended!", name: "Chinwe, Consultant" },
-  { quote: "Being part of this community has been amazing! I’ve gained so much knowledge and inspiration.", name: "Aisha, Writer" },
-  { quote: "This platform is filled with uplifting stories that have helped me grow professionally.", name: "Mariam, Engineer" },
-  { quote: "I appreciate the well-researched articles and expert insights shared here.", name: "Sophia, Researcher" },
+  { quote: "This platform has been a game-changer for me. I've learned so much from the articles and workshops.", name: "Amina" },
+  { quote: "The community support and mentorship have been invaluable. I feel empowered to take the next step in my career.", name: "Ngozi" },
+  { quote: "Elevate Magazine has helped me connect with inspiring women and grow my confidence in my field.", name: "Fatima" },
+  { quote: "I love the engaging content and the positive energy. It's exactly what I needed for motivation!", name: "Zainab" },
+  { quote: "The expert advice and shared experiences are truly inspiring. Highly recommended!", name: "Chinwe" },
+  { quote: "Being part of this community has been amazing! I’ve gained so much knowledge and inspiration.", name: "Aisha" },
+  { quote: "This platform is filled with uplifting stories that have helped me grow professionally.", name: "Mariam" },
+  { quote: "I appreciate the well-researched articles and expert insights shared here.", name: "Sophia" },
 ];
 
 const Testimonial = () => {

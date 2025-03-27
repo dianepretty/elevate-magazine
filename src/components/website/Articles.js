@@ -1,6 +1,7 @@
 import React from 'react'; 
 import { TbArrowNarrowRight } from 'react-icons/tb';
 import { useArticles } from '../../context/ArticlesContext';
+import { Link } from 'react-router-dom'; // Import Link from react-router-dom
 
 const Articles = () => {
   const { articles } = useArticles(); // Access articles from context
@@ -19,9 +20,9 @@ const Articles = () => {
                 {article.title}
               </h3>
               <p className="mb-4">{article.description}</p>
-              <a href={article.link} className="flex hover:cursor-pointer font-play font-base text-sm text-[#303A30] hover:underline">
+              <Link to={`/article/${article.id}`} className="flex hover:cursor-pointer font-play font-base text-sm text-[#303A30] hover:underline">
                 Read more <TbArrowNarrowRight className="mt-1 ml-1" size={14} />
-              </a>
+              </Link>
             </div>
           ))}
         </div>

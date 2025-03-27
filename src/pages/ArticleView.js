@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../components/website/Navbar";
-import { useArticles } from "../context/ArticlesContext"; // Import the custom hook
+import { useArticles } from "../context/ArticlesContext";
 
 const ArticleView = () => {
   const { id } = useParams();
-  const { articles } = useArticles(); // Access the articles from context
+  const { articles } = useArticles();
   const article = articles.find((a) => a.id === parseInt(id));
+
+  // Scroll to top on page load
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
 
   if (!article) {
     return <div className="max-w-7xl mx-auto p-4">Article not found</div>;
