@@ -7,6 +7,8 @@
 - **User Roles:** 
   - **General Users (Visitors):** Browse public content, share articles, and explore featured stories.
   - **Admin:** Create, edit, delete and publish articles via the **Admin Dashboard**.
+
+  - **Credentials:** 
   - **Login:** Login with email: email@gmail.com and password: mypassword
   
 
