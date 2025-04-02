@@ -44,8 +44,8 @@ npm install
 ```
 - Create a **.env** file and configure environment variables:
   ```env
-MONGO_URI=mongodb+srv://Grace:1234@cluster0.0kx6g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
-JWT_SECRET=secret
+  MONGO_URI=mongodb+srv://Grace:1234@cluster0.0kx6g.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  JWT_SECRET=secret
   ````
 - Run the backend:
 ```bash
