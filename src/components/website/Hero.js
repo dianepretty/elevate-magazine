@@ -22,7 +22,7 @@ const Hero = () => {
           <p className="text-lg italic text-white leading-relaxed">
             ‘ Our mission is to empower African women by sharing testimonials from successful Black women, inspiring them to pursue greatness. By learning from these stories, I aim to equip women with the confidence and knowledge to create solutions for Africa’s most pressing challenges—while remaining the soul that nurtures and strengthens their families.’
           </p>
-          <p className="mt-4 font-semibold ">- Grace Cyubahirocy'Imana</p>
+          <p className="mt-4 font-semibold ">- Diane Pretty Ntakirutimana</p>
         </div>
       </div>
     </section>

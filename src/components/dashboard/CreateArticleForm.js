@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useArticles } from '../../context/ArticlesContext'; 
 import TopBar from './Topbar';
 import Sidebar from './Sidebar';
@@ -10,27 +11,28 @@ const CreateArticleForm = () => {
   const [content, setContent] = useState('');
   const [successMessage, setSuccessMessage] = useState(null);
   const { addArticle } = useArticles();
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const formattedDate = new Date().toISOString().split('T')[0]; // Extracts YYYY-MM-DD
+    
     const newArticle = {
       id: Date.now(),
       title,
       author,
       description,
       content,
-      date: new Date().toISOString(),
+      date: formattedDate,
     };
 
     addArticle(newArticle);
     setSuccessMessage('Article added successfully!');
 
-    setTitle('');
-    setAuthor('');
-    setDescription('');
-    setContent('');
-
-    setTimeout(() => setSuccessMessage(null), 3000);
+    setTimeout(() => {
+      setSuccessMessage(null);
+      navigate('/dashboard');
+    }, 3000);
   };
 
   return (
