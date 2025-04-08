@@ -15,7 +15,7 @@
 ## 🛠️ Tech Stack
 - **Frontend:** React.js + Tailwind CSS
 - **Authentication:** JWT (JSON Web Tokens) + OAuth
-- **Hosting:** Vercel 
+- **Hosting:** Vercel  https://elevate-magazine.vercel.app/
 
 ## 🚀 Setup & Installation
 ### Prerequisites
